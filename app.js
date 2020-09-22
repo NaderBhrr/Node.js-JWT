@@ -6,12 +6,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 // Connect to database
-mongoose.connect(
-  "mongodb+srv://jwt01:authjwt@authjwt.dscje.mongodb.net/<dbname>?retryWrites=true&w=majority",
-  () => {
-    console.log("Application connected successfully to DB");
-  }
-);
+mongoose.connect("", () => {
+  console.log("Application connected successfully to DB");
+});
 
 //  Import routes
 const authRoute = require("./routers/auth");
